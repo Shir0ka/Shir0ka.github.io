@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 **Section 1. 1Links to an external site.: 3, 11, 13, 14**
 
@@ -172,7 +172,3 @@ Answer
 We have 6 possibilities from each dice. So if there are 5 dices you can add the sum of them being (n1+n2+n3+n4+n5+n6) will be equal to 5.
 
 nCr(10,5)=252
-
-
-
-
