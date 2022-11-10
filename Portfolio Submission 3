@@ -1,0 +1,20 @@
+---
+published: false
+---
+**2.1**
+
+A sequence is simply an ordered list of numbers. For example, here is a sequence: 0, 1, 2, 3, 4, 5, …. This is different from the set  because, while the sequence is a complete list of every element in the set of natural numbers, in the sequence we very much care what order the numbers come in. For this reason, when we use variables to represent terms in a sequence they will look like this: a0,a1,a2,a3
+
+A recursive definition (sometimes called an inductive definition) for a sequence  consists of a recurrence relation : an equation relating a term of the sequence to previous terms (terms with smaller index) and an initial condition: a list of a few terms of the sequence (one less than the number of terms in the recurrence relation).
+
+A closed formula for a sequence is a formula for using a fixed finite number of operations on n. This is what you normally think of as a formula in n, just as if you were defining a function in terms of  (because that is exactly what you are doing).
+
+Finding closed formulas, or even recursive definitions, for sequences is not trivial. There is no one method for doing this. Just as in evaluating integrals or solving differential equations, it is useful to have a bag of tricks you can apply, but sometimes there is no easy answer.
+
+One useful method is to relate a given sequence to another sequence for which we already know the closed formula. To do this, we need a few “known sequences” to compare mystery sequences to. Here are a few that are good to know. We will verify the formulas for these in the coming sections.
+
+**Problem 18**
+
+When bees play chess, they use a hexagonal board like the one shown below. The queen bee can move one space at a time either directly to the right or angled up-right or down-right (but can never move leftwards). How many different paths can the queen take from the top left hexagon to the bottom right hexagon? Explain your answer, and this relates to the previous question. (As an example, there are three paths to get to the second hexagon on the bottom row.)
+
+**Answer**
