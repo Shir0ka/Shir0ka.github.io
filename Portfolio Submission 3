@@ -127,3 +127,5 @@ D.
 # = 3+6+9+12+45+ 3n
 
 (3n(n+1))/2 is the closed formula
+
+**2.3 Polynomial Fitting**
