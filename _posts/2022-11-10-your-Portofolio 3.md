@@ -3,4 +3,131 @@ published: true
 ---
 ## A New Post
 
-Hello does this worok i dont knopw
+**2.1**
+
+A sequence is simply an ordered list of numbers. For example, here is a sequence: 0, 1, 2, 3, 4, 5, …. This is different from the set  because, while the sequence is a complete list of every element in the set of natural numbers, in the sequence we very much care what order the numbers come in. For this reason, when we use variables to represent terms in a sequence they will look like this: a0,a1,a2,a3
+
+A recursive definition (sometimes called an inductive definition) for a sequence  consists of a recurrence relation : an equation relating a term of the sequence to previous terms (terms with smaller index) and an initial condition: a list of a few terms of the sequence (one less than the number of terms in the recurrence relation).
+
+A closed formula for a sequence is a formula for using a fixed finite number of operations on n. This is what you normally think of as a formula in n, just as if you were defining a function in terms of  (because that is exactly what you are doing).
+
+Finding closed formulas, or even recursive definitions, for sequences is not trivial. There is no one method for doing this. Just as in evaluating integrals or solving differential equations, it is useful to have a bag of tricks you can apply, but sometimes there is no easy answer.
+
+One useful method is to relate a given sequence to another sequence for which we already know the closed formula. To do this, we need a few “known sequences” to compare mystery sequences to. Here are a few that are good to know. We will verify the formulas for these in the coming sections.
+
+**Problem 18**
+
+When bees play chess, they use a hexagonal board like the one shown below. The queen bee can move one space at a time either directly to the right or angled up-right or down-right (but can never move leftwards). How many different paths can the queen take from the top left hexagon to the bottom right hexagon? Explain your answer, and this relates to the previous question. (As an example, there are three paths to get to the second hexagon on the bottom row.)
+
+**Answer**
+
+Since we have to reach nth cell of the first row you have to do n-1^k cell of the first roll to the second row
+
+bn=an+bn-1 ... 2
+
+Since we can get to the nth cell of the second row from the nth cell of the first row or the n-1th cell of the second row
+
+bn=an+bn-1
+an=bn-bn-1
+an=an-1 + bn-2
+
+an=an-1 + bn-1
+(bn-1 - bn-2 )+ bn-1
+
+bn = an+bn-1
+(2bn-1 - bn-2) +bn-1
+3bn-1 - bn-2
+
+bn=3bn-1 - bn-2 , n>=2
+b0=0
+b1=1
+
+3b1 -b0
+3(1)-0 =3
+
+b3 = 3b2-b1
+=3(3)-1 =8
+
+b4 =33b3 -b2
+=3(8)-3=21
+
+b5 = 3b4 - b3 = 
+3(21)-8=55
+
+b6 = 3b5 -b4 
+3(55) - 21=144
+
+144 paths
+
+**2.2 Arithmetic and Geometric Sequences**
+
+Arithmetic Sequences.
+If the terms of a sequence differ by a constant, we say the sequence is arithmetic. If the initial term (a0) of the sequence is a and the common difference is d, then we have,
+
+Recursive definition: an=an-1+d  with .a0=a
+
+Closed formula: an =a+dn
+
+What about sequences like 2,6,18,54? This is not arithmetic because the difference between terms is not constant. However, the ratio between successive terms is constant. We call such sequences geometric.
+
+Geometric Sequences.
+A sequence is called geometric if the ratio between successive terms is constant. Suppose the initial term a0 is a and the common ratio is r. Then we have,
+
+Recursive definition: an=ra_n-1  with a0=a.
+
+Closed formula: an =a * r^n
+
+Look at the sequence which starts 1,3,6,10,15. These are called the triangular numbers since they represent the number of dots in an equilateral triangle (think of how you arrange 10 bowling pins: a row of 4 plus a row of 3 plus a row of 2 and a row of 1).
+
+Notice that the differences between terms do form an arithmetic sequence:2,3,4,5,6 . This means that the nth term of the sequence (Tn) is the sum of the first n terms in the sequence 1,2,3,4,5 . We say that (Tn) is the sequence of partial sums of the sequence 1,2,3 (partial sums because we are not taking the sum of all infinitely many terms).
+
+**Problem 10**
+
+ If you have enough toothpicks, you can make a large triangular grid. Below, are the triangular grids of size 1 and of size 2. The size 1 grid requires 3 toothpicks, the size 2 grid requires 9 toothpicks.
+ 
+ A.Let tn be the number of toothpicks required to make a size n triangular grid. Write out the first 5 terms of the sequence t1,t2....
+ 
+ B.Find a recursive definition for the sequence. Explain why you are correct.
+ 
+ C.Is the sequence arithmetic or geometric? If not, is it the sequence of partial sums of an arithmetic or geometric sequence? Explain why your answer is correct.
+
+ D.Use your results from part (c) to find a closed formula for the sequence. Show your work.
+
+
+**Answer**
+
+A. t1=3 , t2=9(3+6) , t3=18(3+6+9), t4= 30= (3+6+9+12), t5= 45 (3+6+9+12+15)
+
+B. an = an01 +3b
+a2=1+b
+3+6=9
+a3=a2+3*3
+9+9=18
+a4 = a3 + 3*4
+18+12=30
+the definition is correct
+
+C.
+
+3=3
+9=3+6
+18=3+6+9
+30=3+6+9+12
+45=3+6+9+12+15
+# = 3+6+9+12+45+ 3n
+
+
+3,9,18,30,45... is the sum of the arithmetic sequence.
+
+D.
+
+3=3
+9=3+6
+18=3+6+9
+30=3+6+9+12
+45=3+6+9+12+15
+# = 3+6+9+12+45+ 3n
+
+(3n(n+1))/2 is the closed formula
+
+**2.3 Polynomial Fitting**
