@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 **2.1**
 
@@ -18,3 +18,47 @@ One useful method is to relate a given sequence to another sequence for which we
 When bees play chess, they use a hexagonal board like the one shown below. The queen bee can move one space at a time either directly to the right or angled up-right or down-right (but can never move leftwards). How many different paths can the queen take from the top left hexagon to the bottom right hexagon? Explain your answer, and this relates to the previous question. (As an example, there are three paths to get to the second hexagon on the bottom row.)
 
 **Answer**
+
+Since we have to reach nth cell of the first row you have to do n-1^k cell of the first roll to the second row
+
+bn=an+bn-1 ... 2
+
+Since we can get to the nth cell of the second row from the nth cell of the first row or the n-1th cell of the second row
+
+bn=an+bn-1
+an=bn-bn-1
+an=an-1 + bn-2
+
+an=an-1 + bn-1
+(bn-1 - bn-2 )+ bn-1
+
+bn = an+bn-1
+(2bn-1 - bn-2) +bn-1
+3bn-1 - bn-2
+
+bn=3bn-1 - bn-2 , n>=2
+b0=0
+b1=1
+
+3b1 -b0
+3(1)-0 =3
+
+b3 = 3b2-b1
+=3(3)-1 =8
+
+b4 =33b3 -b2
+=3(8)-3=21
+
+b5 = 3b4 - b3 = 
+3(21)-8=55
+
+b6 = 3b5 -b4 
+3(55) - 21=144
+
+144 paths
+
+**2.2 Arithmetic and Geometric Sequences**
+
+
+
+
