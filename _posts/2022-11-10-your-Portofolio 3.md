@@ -191,9 +191,43 @@ b.What do the initial terms need to be in order for a9=30 ?
 c.For which  are there initial terms which make a9?
 
 **Answer**
+a. We have characteristic polynomial x^2-2x+1, which has x-1 as the only repeated root.  THe recucurence relation would have to be an = 1+n
 
-b. For a9=30 Wen using the equation aboive a9=1+9=10. This means that the difference is 30-10 which equals to 20
-the term should be a0 = 1+20 =21 and a1= 2+20=22
+b. For a9=30 Wen using the equation aboive a9=1+9=10. This means that the difference is 30-10 which equals to 20 the term should be a0 = 1+20 =21 and a1= 2+20=22
 
-c. For the intial termwhich makes a9 you have to to be a0= 1+(x-10)=x=9 w
+c. For the intial termwhich makes a9 you have to to be 
+a0= 1+(x-10)=x=9 
 a1=2+(x-10)= x-8
+
+**3.1 Propositional Logic**
+
+A proposition is simply a statement. Propositional logic studies the ways statements can interact with each other. It is important to remember that propositional logic does not really care about the content of the statements. For example, in terms of propositional logic, the claims, “if the moon is made of cheese then basketballs are round,” and “if spiders have eight legs then Sam walks with a limp” are exactly the same. They are both implications: statements of the form, P -> Q.
+
+We need to decide when the statement (P -> Q)V(Q -> P) is true. Using the definitions of the connectives in Section 0.2, we see that for this to be true, either P -> Q must be true or Q -> P must be true (or both). Those are true if either P is false or Q is true (in the first case) and Q is false or R is true (in the second case). So—yeah, it gets kind of messy. Luckily, we can make a chart to keep track of all the possibilities. Enter truth tables. The idea is this: on each row, we list a possible combination of T's and F's (for true and false) for each of the sentential variables, and then mark down whether the statement in question is true or false in that case. We do this for every possible combination of T's and F's. Then we can clearly see in which cases the statement is true or false. For complicated statements, we will first fill in values for each part of the statement, as a way of breaking up our task into smaller, more manageable pieces.
+
+Since the truth value of a statement is completely determined by the truth values of its parts and how they are connected, all you really need to know is the truth tables for each of the logical connectives. 
+
+Logical Equivalence aretwo (molecular) statements P and Q are logically equivalent provided P is true precisely when Q is true. That is, P and Q have the same truth value under any assignment of truth values to their atomic parts.
+
+To verify that two statements are logically equivalent, you can make a truth table for each and check whether the columns for the two statements are identical.
+
+**Problem**
+
+12. Determine if the following deduction rule is valid:
+P V Q
+ ¬P
+ -----
+ ∴Q
+ 
+ **Answer**
+ 
+ To check it is valid or not you can make a truth table
+ 
+ P | Q |¬P | P V Q | (P V Q) ^ ¬P | ((P V Q) ^ ¬P )¬Q
+--------------------------------------------------------
+ T | T | F |   T   |       F      |        T         
+ T | F | F |   T   |       F      |        T   
+ F | T | T |   T   |       t      |        T         
+ F | F | T |   F   |       F      |        T         
+ 
+ This shows that the truth value of Q in the rows that have  P V Q and  ¬P are true.
