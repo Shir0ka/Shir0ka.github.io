@@ -5,6 +5,85 @@ published: true
 
 Course summary 
 
+Class math 2720 also known as Discrete Math at CSUSB is a class about combinatorics, sequences, symbolic logic, and graph theory. 
+
+
+(1)
+A statement is any declarative sentence that is either true or false. A statement is atomic if it cannot be divided into smaller statements, otherwise, it is called molecular. You can build more complicated (molecular) statements out of simpler (atomic or molecular) ones using logical connectives.
+
+P ^ Q is true when both P and Q are true (conjunction)
+
+P v Q is true when P or Q or both are true (disjunction)
+
+P -> Q is true when P is false or Q is true of both (implication or conditional)
+
+P<-> Q is true when P and Q are both true or both false (biconditional)
+
+P is read “not P” and called a negation (negation)> We loved with a love that was more than love
+
+
+
+(2)
+A set is a unordered collection of objects. These objects are sometimes called elements or members of the set. Representing sets are like Listing enumerating the members of the set or the definition by property, using the set builder notation A set A is said to be a subset of B if and only if every element of A is also an element of B.
+
+The empty set is the set that contains no elements. “Ø”
+
+The universe set is the set of all elements. “U”
+
+The set of natural numbers. That is,N = {0,1,2,3..} . “N”
+
+The set of integers. That is, Z={..,-2,-1,0,1,2,3,…} . “Z”
+
+The set of rational numbers. “Q”
+
+The set of real numbers. “R”
+
+The power set of any set A is the set of all subsets of A “P(A)”
+
+(3)
+A function is a rule that assigns each input exactly one output. We call the output the image of the input. The set of all inputs for a function is called the domain. The set of all allowable outputs is called the codomain. We would write f: X -> Y to describe a function with name f, domain X, and codomain Y. This does not tell us which function f is though. To define the function, we must describe the rule. This is often done by giving the formula to compute the output for any input. The set of natural numbers that output is called the range of the function.
+
+For a function f: N -> N, a recursive definition consists of an initial condition together with a recurrence relation. The initial condition is the explicitly given value of f(0). The recurrence relation is a formula in terms of f(n+1) (and f(n) possibly n itself).
+
+A surjection is a function for which every element of the codomain is in the range. How many of the functions?
+
+An injection is a function f that maps distinct elements of its domain to distinct elements.
+
+An injection bijections if a function f: X → Y satisfied the properties of surjective function (onto function) and injective function (one-to-one function).
+
+(4)
+Additive Principle (with sets). Given two sets A and B, if An B = Ø (that is if there is no element in common to both A and B), then |AUB| = |A| + |B|
+
+Cartesian Product. Given sets A and B, we can form the set A x B = ((x,y) : x ∈ A ^ y ∈ B] to be the set of all ordered pairs (x, y) where a is an element of A and y is an element of B. We call A x B the Cartesian product of A and B.
+
+Multiplicative Principle. The multiplicative principle states that if event A can occur in m ways, and each possibility for A allows for exactly n ways for event B, then the event “ A and B” can occur in m - n ways.
+
+(5)
+Bit Strings “Bit” is short for “binary digit,” so a bit string is a string of binary digits. The binary digits are simply the numbers 0 and 1. All of the following are bit strings:1001, 0, 1111,
+
+Bit Strings. An n-bit string is a bit string of length n. That is, it is a string containing n symbols, each of which is a bit, either 0 or 1.
+
+Binomial coefficients are the coefficients in the expanded version of a binomial, such as (x+y)^5. What happens when we multiply such a binomial out? We will expand (x=y)^n for various values of n
+
+
+(6)
+In general, we can ask how many permutations exist of k objects choosing those objects from a larger collection of n objects.  We write this number P(n,k) and sometimes call it a k-permutation of n elements. From the example above, we see that to compute P(n,k), we must apply the multiplicative principle to k numbers, starting with n and counting backwards.
+
+k-permutations of n elements. P(n,k) is the number of k-permutations of n elements, the number of ways to arrange k objects chosen from n distinct objects.
+
+(7)
+Stars and bars allows us to count the number of ways to distribute 10 cookies to 3 kids and natural number solutions to x+y+z=11, for example. A relatively easy modification allows us to put a lower bound restriction on these problems: perhaps each kid must get at least two cookies or x,y,z>=2. This was done by first assigning each kid (or variable) 2 cookies (or units) and then distributing the rest using stars and bars.
+
+
+(8)
+Arithmetic Sequences. If the terms of a sequence differ by a constant, we say the sequence is arithmetic.  For instance, the sequence 5, 7, 9, 11, 13, 15 is an arithmetic progression with a common difference of 2.
+Geometric Sequences. A sequence is called geometric if the ratio between successive terms is constant.
+For example, the sequence 2, 6, 18, 54 is a geometric progression with common ratio 3.
+
+(9)
+A proposition is simply a statement. Propositional logic studies the ways statements can interact with each other. It is important to remember that propositional logic does not really care about the content of the statements. For example, in terms of propositional logic, the claims, “if the moon is made of cheese then basketballs are round,” and “if spiders have eight legs then Sam walks with a limp” are exactly the same. They are both implications: statements of the form, P -> Q.
+
+
 
 
 ------------------------------------------------------------------------------------------------------------
