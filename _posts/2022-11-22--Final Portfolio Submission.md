@@ -104,7 +104,7 @@ Sometimes we will talk about a graph with a special name (like Kn or the Peterse
 
 **question**
 
-8. for which n >= 3 is the grpah cn bipartite
+for which n >= 3 is the grpah cn bipartite
 
 
 **answer**
@@ -179,7 +179,7 @@ The cube is a regular polyhedron (also known as a Platonic solid) because each f
 
 
 **question**
-3.Is it possible for a connected graph with 7 vertices and 10 edges to be drawn so that no edges cross and create 4 faces? Explain.
+Is it possible for a connected graph with 7 vertices and 10 edges to be drawn so that no edges cross and create 4 faces? Explain.
 
 **answer**
 
@@ -201,8 +201,10 @@ If G is a planar graph, then the chromatic number of G is less than or equal to 
 A clique in a graph is a set of vertices all of which are pairwise adjacent. In other words, a clique of size n is just a copy of the complete graph Kn. We define the clique number of a graph to be the largest n for which the graph contains a clique of size n. Any clique of size n cannot be colored with fewer than n colors, so we have a nice lower bound.
 
 The chromatic number of a graph G is at least the clique number of G.
+
 **question**
-10.Find the chromatic number of the graph below and prove you are correct.
+Find the chromatic number of the graph below and prove you are correct.
+
 **answer**
 
 the chromatic number of a grph is the smallest amount of color needed to color the vertext. And two adjection points cant be the same color 
@@ -229,7 +231,8 @@ In graph theory terms, we are asking whether there is a path which visits every 
 We could also consider Hamilton cycles, which are Hamilton paths which start and stop at the same vertex.
 
 **question**
-1.  You and your friends want to tour the southwest by car. You will visit the nine states below, with the following rather odd rule: you must cross each border between neighboring states exactly once (so, for example, you must cross the Colorado-Utah border exactly once). Can you do it? If so, does it matter where you start your road trip? What fact about graph theory solves this problem?
+
+You and your friends want to tour the southwest by car. You will visit the nine states below, with the following rather odd rule: you must cross each border between neighboring states exactly once (so, for example, you must cross the Colorado-Utah border exactly once). Can you do it? If so, does it matter where you start your road trip? What fact about graph theory solves this problem?
 
 **answer**
 
